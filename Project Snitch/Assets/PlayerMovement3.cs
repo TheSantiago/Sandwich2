@@ -14,9 +14,7 @@ public class PlayerMovement3 : MonoBehaviour
 
     public bool direccion = true;
     public bool pelon = true;
-
     public int cuenta;
-
     void FixedUpdate()
     {
         if (rb.velocity.x > maxvel)
@@ -31,6 +29,14 @@ public class PlayerMovement3 : MonoBehaviour
         if (cuenta > 0)
         {
             Touch touch = (Input.GetTouch(0));
+            if (Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, 0, 10)).x < 0)//Pero mira ese bug arreglado
+                {
+                    direccion = false;
+                }
+            if (Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, 0, 10)).x > 0)
+                {
+                    direccion = true;
+                }
             if (pelon == true)
             {
                 hector = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, 0, 10));
