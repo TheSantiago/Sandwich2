@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114778346951461594}
   m_Layer: 0
   m_Name: Lettuce
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,4 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lechuga: {fileID: 50037578137470972}
-  maxvel: 1
+  maxvel: -2
+  obgetolechuga: {fileID: 1381899364729752}
+  plato: {fileID: 1752214700192602, guid: 9876da9501766fa44bd35f7ac8eb9e7a, type: 2}
+  womov: 1

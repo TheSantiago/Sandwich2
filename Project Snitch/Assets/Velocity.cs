@@ -5,18 +5,27 @@ using UnityEngine;
 public class Velocity : MonoBehaviour {
     public Rigidbody2D lechuga;
     public int maxvel;
-	// Use this for initialization
-	void Start ()
-    {
-    }
-	
-	// Update is called once per frame
+    public GameObject obgetolechuga;
+    public GameObject plato;
+    public bool womov=true;
 	void FixedUpdate ()
     {
+        if (womov == true)
+        {
 		if (lechuga.velocity.y < maxvel)
         {
-            Debug.Log("Lechuga asesina");
             lechuga.velocity = new Vector2(lechuga.velocity.x, maxvel);
         }
+        }
 	}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            Debug.Log("Lechuga loca");
+            Destroy(lechuga);
+            womov = false;
+            obgetolechuga.transform.SetParent(collision.transform);
+        }
+    }
 }

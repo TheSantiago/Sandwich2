@@ -8,7 +8,7 @@ public class PlayerMovement3 : MonoBehaviour
     public Rigidbody2D rb;
     public GameObject cube;
     public Transform player;
-
+    public int maxvel;
     public Vector3 hector;
     public Vector3 whereto;
 
@@ -19,6 +19,14 @@ public class PlayerMovement3 : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (rb.velocity.x > maxvel)
+        {
+            rb.velocity = new Vector2(maxvel, rb.velocity.y);
+        }
+        if (rb.velocity.x < -maxvel)
+        {
+            rb.velocity = new Vector2(-maxvel, rb.velocity.y) ;
+        }
         cuenta = Input.touchCount;
         if (cuenta > 0)
         {
