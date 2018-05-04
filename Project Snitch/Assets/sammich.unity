@@ -478,61 +478,50 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4571706164482782, guid: fca48c0b39aa0284ea64c9c7ace2ce65, type: 2}
+    - target: {fileID: 4261003535184246, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.31
       objectReference: {fileID: 0}
-    - target: {fileID: 4571706164482782, guid: fca48c0b39aa0284ea64c9c7ace2ce65, type: 2}
+    - target: {fileID: 4261003535184246, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
       propertyPath: m_LocalPosition.y
       value: 6.75
       objectReference: {fileID: 0}
-    - target: {fileID: 4571706164482782, guid: fca48c0b39aa0284ea64c9c7ace2ce65, type: 2}
+    - target: {fileID: 4261003535184246, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
       propertyPath: m_LocalPosition.z
       value: -0.03298375
       objectReference: {fileID: 0}
-    - target: {fileID: 4571706164482782, guid: fca48c0b39aa0284ea64c9c7ace2ce65, type: 2}
+    - target: {fileID: 4261003535184246, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4571706164482782, guid: fca48c0b39aa0284ea64c9c7ace2ce65, type: 2}
+    - target: {fileID: 4261003535184246, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4571706164482782, guid: fca48c0b39aa0284ea64c9c7ace2ce65, type: 2}
+    - target: {fileID: 4261003535184246, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4571706164482782, guid: fca48c0b39aa0284ea64c9c7ace2ce65, type: 2}
+    - target: {fileID: 4261003535184246, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4571706164482782, guid: fca48c0b39aa0284ea64c9c7ace2ce65, type: 2}
+    - target: {fileID: 4261003535184246, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114778346951461594, guid: fca48c0b39aa0284ea64c9c7ace2ce65,
-        type: 2}
-      propertyPath: maxvel
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114778346951461594, guid: fca48c0b39aa0284ea64c9c7ace2ce65,
-        type: 2}
-      propertyPath: obgetolechuga
-      value: 
-      objectReference: {fileID: 1353549054}
-    - target: {fileID: 114778346951461594, guid: fca48c0b39aa0284ea64c9c7ace2ce65,
+    - target: {fileID: 114314309938728370, guid: 53e211cac06de8d41a087742e920ffcd,
         type: 2}
       propertyPath: plato
       value: 
       objectReference: {fileID: 1615721098}
+    - target: {fileID: 1710703190430576, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
+      propertyPath: m_Name
+      value: Lettuce
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fca48c0b39aa0284ea64c9c7ace2ce65, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 53e211cac06de8d41a087742e920ffcd, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1353549054 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1381899364729752, guid: fca48c0b39aa0284ea64c9c7ace2ce65,
-    type: 2}
-  m_PrefabInternal: {fileID: 1329875003}
 --- !u!1001 &1564894876
 Prefab:
   m_ObjectHideFlags: 0
@@ -582,6 +571,12 @@ Prefab:
       propertyPath: time
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114241297706913092, guid: 9876da9501766fa44bd35f7ac8eb9e7a,
+        type: 2}
+      propertyPath: lechuga
+      value: 
+      objectReference: {fileID: 1710703190430576, guid: 53e211cac06de8d41a087742e920ffcd,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9876da9501766fa44bd35f7ac8eb9e7a, type: 2}
   m_IsPrefabParent: 0
