@@ -25,7 +25,7 @@ public class Velocity : MonoBehaviour {
             Debug.Log("Lechuga loca");
             Destroy(lechuga);
             womov = false;
-            obgetolechuga.transform.position = new Vector3(collision.transform.position.x, obgetolechuga.transform.position.y, 0);
+            obgetolechuga.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y+0.3f, 0);
             collision.collider.enabled = false;
             obgetolechuga.transform.SetParent(collision.transform);
         }
@@ -34,7 +34,7 @@ public class Velocity : MonoBehaviour {
             Debug.Log("Lechuga loca");
             Destroy(lechuga);
             womov = false;
-            obgetolechuga.transform.position = new Vector3(collision.transform.position.x, obgetolechuga.transform.position.y, 0);
+            obgetolechuga.transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y+0.3f, 0);
             obgetolechuga.transform.SetParent(collision.transform);
             collision.gameObject.tag = "Ground";
         }
